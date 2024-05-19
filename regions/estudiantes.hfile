@@ -1,0 +1,38 @@
+{
+    "0001": 
+    {
+        "personal": {
+            "nombre": {
+                "ver_01": "Mario"
+            },
+            "apellido": {
+                "ver_01": "Alberto"
+            },
+            "fecha_de_nacimiento": {
+                "ver_01": "19-05-2003"
+            },
+            "telefono": {
+                "ver_01": "12412132"
+            },
+            "correo": {
+                "ver_01": "marioalberto@example.com"
+            },
+            "direccion": {
+                "ver_01": "some-street-address"
+            }
+        },
+        "academico": {
+            "correo": {
+                "ver_01": "marioalberto@example.edu"
+            },
+            "promedio": {
+                "ver_01": 80.5
+            },
+            "cursos_actuales": {
+                "ver_01": 6
+            }
+
+        }
+
+    }
+}
