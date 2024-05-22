@@ -44,13 +44,19 @@ class HBaseSimulator:
         if table_name in self.tables:
             if self.tables[table_name].enabled:
                 print(f"Table {table_name} is enabled.")
+                return True
             else:
                 print(f"Table {table_name} is disabled.")
+                return False
         else:
             print(f"Table {table_name} does not exist.")
+            return False
 
     def alter_table(self, table_name, column_families):
         if table_name in self.tables:
+            if not self.is_enabled(table_name):
+                print(f"Table {table_name} is disabled. Operation not permitted.")
+                return
             self.tables[table_name].alter(column_families)
             print(f"Table {table_name} altered successfully.")
         else:
@@ -73,6 +79,7 @@ class HBaseSimulator:
         else:
             print(f"Table {table_name} does not exist.")
 
+    # DML (Lenguaje de manipulación de datos)
     def put(self, table_name, row_key, column_family, column, value):
         if table_name in self.tables:
             self.tables[table_name].put(row_key, column_family, column, value)
