@@ -1,12 +1,18 @@
-from matplotlib import table
+from os import listdir, remove
 from Hfiles import Table, read_hfile, write_hfile
 from pprint import pprint
 import time
 
 class HBaseSimulator:
     def __init__(self):
-        self.tables = {}
+        self.tables: Table = {}
 
+        region_files = listdir("regions/")
+        if region_files:
+            for f in region_files:
+                table = read_hfile(f"regions/{f}")
+                self.tables[table.name] = table                   
+        
     def load_table(self, table: Table):
         if table.name in self.tables:
             print(f"Table {table.name} already exists.")
@@ -27,6 +33,7 @@ class HBaseSimulator:
             print(f"Table {table_name} already exists.")
         else:
             self.tables[table_name] = Table(table_name, column_families)
+            write_hfile(self.tables[table_name]) 
             print(f"Table {table_name} created successfully.")
 
     def list_tables(self):
@@ -68,11 +75,14 @@ class HBaseSimulator:
     def drop_table(self, table_name):
         if table_name in self.tables:
             del self.tables[table_name]
+            remove(f"regions/{table_name}.hfile")
             print(f"Table {table_name} dropped successfully.")
         else:
             print(f"Table {table_name} does not exist.")
 
     def drop_all_tables(self):
+        for t in self.tables:
+            remove(f"regions/{t}.hfile")
         self.tables.clear()
         print("All tables dropped successfully.")
 
@@ -86,6 +96,7 @@ class HBaseSimulator:
     def put(self, table_name, row_key, column_family, column, value):
         if table_name in self.tables:
             self.tables[table_name].put(row_key, column_family, column, value)
+            write_hfile(self.tables[table_name])
         else:
             print(f"Table {table_name} does not exist.")
 
@@ -105,12 +116,14 @@ class HBaseSimulator:
     def delete(self, table_name, row_key, column_family, column):
         if table_name in self.tables:
             self.tables[table_name].delete(row_key, column_family, column)
+            write_hfile(self.tables[table_name])
         else:
             print(f"Table {table_name} does not exist.")
 
     def delete_all(self, table_name, row_key):
         if table_name in self.tables:
             self.tables[table_name].delete_all(row_key)
+            write_hfile(self.tables[table_name])
         else:
             print(f"Table {table_name} does not exist.")
 
@@ -134,6 +147,7 @@ class HBaseSimulator:
             self.tables[table_name] = Table(table_name, column_families)
             print(f" - Enabling table {table_name}...")
             end_time = time.time()
+            write_hfile(self.tables[table_name])
             print(f"Table {table_name} truncated successfully.")
             print(f"0 row(s) in {end_time - start_time:.4f} seconds")
         else:
