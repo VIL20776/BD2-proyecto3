@@ -1,6 +1,7 @@
 from matplotlib import table
 from Hfiles import Table, read_hfile, write_hfile
 from pprint import pprint
+import time
 
 class HBaseSimulator:
     def __init__(self):
@@ -122,14 +123,21 @@ class HBaseSimulator:
 
     def truncate(self, table_name):
         if table_name in self.tables:
+            start_time = time.time()
+            print(f"Truncating '{table_name}' table (it may take a while):")
+            print(f" - Disabling table {table_name}...")
             self.tables[table_name].disable()
+            print(f" - Truncating table {table_name}...")
             column_families = self.tables[table_name].column_families
             del self.tables[table_name]
+            print(f" - Creating table {table_name}...")
             self.tables[table_name] = Table(table_name, column_families)
+            print(f" - Enabling table {table_name}...")
+            end_time = time.time()
             print(f"Table {table_name} truncated successfully.")
+            print(f"0 row(s) in {end_time - start_time:.4f} seconds")
         else:
             print(f"Table {table_name} does not exist.")
-
 
 
 def main():
