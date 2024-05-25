@@ -49,10 +49,19 @@ class Table:
         for row_key in self.rows.keys():
             self.get(row_key)
 
-    def delete(self, row_key, column_family, column):
+    def delete(self, row_key, column_family, column, timestamp=None):
         if row_key in self.rows and column_family in self.rows[row_key] and column in self.rows[row_key][column_family]:
-            del self.rows[row_key][column_family][column]
-            print(f"Deleted column {column_family}:{column} from row {row_key} in table {self.name}.")
+            if timestamp:
+                # If a timestamp is provided, delete only the cell with that timestamp
+                if timestamp in self.rows[row_key][column_family][column]:
+                    del self.rows[row_key][column_family][column][timestamp]
+                    print(f"Deleted cell {column_family}:{column} with timestamp {timestamp} from row {row_key} in table {self.name}.")
+                else:
+                    print(f"Cell with timestamp {timestamp} does not exist in {column_family}:{column} of row {row_key}.")
+            else:
+                # If no timestamp is provided, delete the entire column
+                del self.rows[row_key][column_family][column]
+                print(f"Deleted {column_family}:{column} from row {row_key} in table {self.name}.")
         else:
             print(f"Column {column_family}:{column} does not exist in row {row_key}.")
 
