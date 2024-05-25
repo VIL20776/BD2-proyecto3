@@ -1,5 +1,6 @@
 from matplotlib import table
 from Hfiles import Table, read_hfile, write_hfile
+from pprint import pprint
 
 class HBaseSimulator:
     def __init__(self):
@@ -19,6 +20,7 @@ class HBaseSimulator:
             write_hfile(self.tables[table_name])
             print(f"Table {table_name} saved successfully.")
 
+    # DDL (Lenguaje de definición de datos)
     def create_table(self, table_name, column_families):
         if table_name in self.tables:
             print(f"Table {table_name} already exists.")
@@ -88,7 +90,8 @@ class HBaseSimulator:
 
     def get(self, table_name, row_key):
         if table_name in self.tables:
-            self.tables[table_name].get(row_key)
+            result = self.tables[table_name].get(row_key)
+            pprint(result)
         else:
             print(f"Table {table_name} does not exist.")
 

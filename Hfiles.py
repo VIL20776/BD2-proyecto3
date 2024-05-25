@@ -1,6 +1,7 @@
 import json
 import datetime
 from pathlib import Path
+from pprint import pprint
 
 class Table:
     def __init__(self, name, column_families, rows = {}):
@@ -39,10 +40,7 @@ class Table:
     def get(self, row_key):
         if row_key in self.rows:
             print(f"Row {row_key} in table {self.name}:")
-            for cf, columns in self.rows[row_key].items():
-                for col, ts in columns.items():
-                    for t, val in ts.items():
-                        print(f"{cf}:{col} = {val} (timestamp: {t})")
+            pprint(self.rows[row_key])
         else:
             print(f"Row {row_key} does not exist in table {self.name}.")
 
