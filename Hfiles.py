@@ -46,9 +46,12 @@ class Table:
             print(f"Row {row_key} does not exist in table {self.name}.")
 
     def scan(self):
-        print(f"Scanning table {self.name}:")
-        for row_key in self.rows.keys():
-            self.get(row_key)
+        print(f"Scanning table {self.name}:\nROW\t\tCOLUMN+CELL")
+        for row_key, col_family_data in self.rows.items():
+            for col_family, column_data in col_family_data.items():
+                for column, time_data in column_data.items():
+                    for time, value in time_data.items():
+                        print(f"{row_key}\t\tcolumn={col_family}:{column}, timestamp={time}, value={value}")
 
     def delete(self, row_key, column_family, column, timestamp=None):
         if row_key in self.rows and column_family in self.rows[row_key] and column in self.rows[row_key][column_family]:
