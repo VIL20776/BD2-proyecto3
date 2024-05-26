@@ -1,0 +1,92 @@
+{
+    "A0001": {
+        "asociacion": {
+            "Id_estudiante": {
+                "ver_01": "0001"
+            },
+            "Id_curso": {
+                "ver_01": "0001"
+            }
+        },
+        "rendimiento": {
+            "punteo_total": {
+                "ver_01": "100"
+            },
+            "comentario": {
+                "ver_01": "Excelente trabajo"
+            }
+        }
+    },
+    "A0002": {
+        "asociacion": {
+            "Id_estudiante": {
+                "ver_01": "0002"
+            },
+            "Id_curso": {
+                "ver_01": "0001"
+            }
+        },
+        "rendimiento": {
+            "punteo_total": {
+                "ver_01": "90"
+            },
+            "comentario": {
+                "ver_01": "Buen trabajo"
+            }
+        }
+    },
+    "A0003": {
+        "asociacion": {
+            "Id_estudiante": {
+                "ver_01": "0003"
+            },
+            "Id_curso": {
+                "ver_01": "0001"
+            }
+        },
+        "rendimiento": {
+            "punteo_total": {
+                "ver_01": "80"
+            },
+            "comentario": {
+                "ver_01": "Trabajo aceptable"
+            }
+        }
+    },
+    "A0004": {
+        "asociacion": {
+            "Id_estudiante": {
+                "ver_01": "0004"
+            },
+            "Id_curso": {
+                "ver_01": "0002"
+            }
+        },
+        "rendimiento": {
+            "punteo_total": {
+                "ver_01": "70"
+            },
+            "comentario": {
+                "ver_01": "Trabajo deficiente"
+            }
+        }
+    },
+    "A0005": {
+        "asociacion": {
+            "Id_estudiante": {
+                "ver_01": "0005"
+            },
+            "Id_curso": {
+                "ver_01": "0002"
+            }
+        },
+        "rendimiento": {
+            "punteo_total": {
+                "ver_01": "60"
+            },
+            "comentario": {
+                "ver_01": "Trabajo muy deficiente"
+            }
+        }
+    }
+}

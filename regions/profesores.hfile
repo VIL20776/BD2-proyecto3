@@ -1,0 +1,167 @@
+{
+    "0001": {
+        "personal": {
+            "nombre": {
+                "ver_01": "Juan"
+            },
+            "apellido": {
+                "ver_01": "Perez"
+            },
+            "fecha_de_nacimiento": {
+                "ver_01": "01/01/1990"
+            },
+            "telefono": {
+                "ver_01": "1234567890"
+            },
+            "correo": {
+                "ver_01": "juanperez@example.com"
+            },
+            "direccion": {
+                "ver_01": "Calle 123, Ciudad, Estado, Pais"
+            }
+        },
+        "profesional": {
+            "correo": {
+                "ver_01": "juanperez@example.edu"
+            },
+            "campo": {
+                "ver_01": "Ingenieria"
+            },
+            "años_de_servicio": {
+                "ver_01": "5"
+            }
+        }
+    },
+    "0002": {
+        "personal": {
+            "nombre": {
+                "ver_01": "Maria"
+            },
+            "apellido": {
+                "ver_01": "Lopez"
+            },
+            "fecha_de_nacimiento": {
+                "ver_01": "02/02/1995"
+            },
+            "telefono": {
+                "ver_01": "9876543210"
+            },
+            "correo": {
+                "ver_01": "marialopez@example.com"
+            },
+            "direccion": {
+                "ver_01": "Avenida 456, Ciudad, Estado, Pais"
+            }
+        },
+        "profesional": {
+            "correo": {
+                "ver_01": "marialopez@example.edu"
+            },
+            "campo": {
+                "ver_01": "Medicina"
+            },
+            "años_de_servicio": {
+                "ver_01": "10"
+            }
+        }
+    },
+    "0003": {
+        "personal": {
+            "nombre": {
+                "ver_01": "Carlos"
+            },
+            "apellido": {
+                "ver_01": "Gonzalez"
+            },
+            "fecha_de_nacimiento": {
+                "ver_01": "03/03/1985"
+            },
+            "telefono": {
+                "ver_01": "5555555555"
+            },
+            "correo": {
+                "ver_01": "carlosgonzalez@example.com"
+            },
+            "direccion": {
+                "ver_01": "Calle 789, Ciudad, Estado, Pais"
+            }
+        },
+        "profesional": {
+            "correo": {
+                "ver_01": "carlosgonzalez@example.edu"
+            },
+            "campo": {
+                "ver_01": "Arquitectura"
+            },
+            "años_de_servicio": {
+                "ver_01": "8"
+            }
+        }
+    },
+    "0004": {
+        "personal": {
+            "nombre": {
+                "ver_01": "Ana"
+            },
+            "apellido": {
+                "ver_01": "Martinez"
+            },
+            "fecha_de_nacimiento": {
+                "ver_01": "04/04/1992"
+            },
+            "telefono": {
+                "ver_01": "1111111111"
+            },
+            "correo": {
+                "ver_01": "anamartinez@example.com"
+            },
+            "direccion": {
+                "ver_01": "Avenida 789, Ciudad, Estado, Pais"
+            }
+        },
+        "profesional": {
+            "correo": {
+                "ver_01": "anamartinez@example.edu"
+            },
+            "campo": {
+                "ver_01": "Derecho"
+            },
+            "años_de_servicio": {
+                "ver_01": "6"
+            }
+        }
+    },
+    "0005": {
+        "personal": {
+            "nombre": {
+                "ver_01": "Pedro"
+            },
+            "apellido": {
+                "ver_01": "Gomez"
+            },
+            "fecha_de_nacimiento": {
+                "ver_01": "05/05/1998"
+            },
+            "telefono": {
+                "ver_01": "9999999999"
+            },
+            "correo": {
+                "ver_01": "pedrogomez@example.com"
+            },
+            "direccion": {
+                "ver_01": "Calle 456, Ciudad, Estado, Pais"
+            }
+        },
+        "profesional": {
+            "correo": {
+                "ver_01": "pedrogomez@example.edu"
+            },
+            "campo": {
+                "ver_01": "Economia"
+            },
+            "años_de_servicio": {
+                "ver_01": "3"
+            }
+        }
+    }
+}

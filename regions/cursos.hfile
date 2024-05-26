@@ -1,0 +1,122 @@
+{
+    "0A": {
+        "info": {
+            "nombre": {
+                "ver_01": "Matematicas"
+            },
+            "descripcion": {
+                "ver_01": "Aqui se enseñan las matematicas"
+            },
+            "creditos": {
+                "ver_01": "3"
+            }
+        },
+        "asignacion": {
+            "id_profesor": {
+                "ver_01": "0001"
+            },
+            "cupo": {
+                "ver_01": "30"
+            },
+            "salon": {
+                "ver_01": "A-101"
+            }
+        }
+    },
+    "0B": {
+        "info": {
+            "nombre": {
+                "ver_01": "Historia"
+            },
+            "descripcion": {
+                "ver_01": "Aqui se enseña la historia"
+            },
+            "creditos": {
+                "ver_01": "4"
+            }
+        },
+        "asignacion": {
+            "id_profesor": {
+                "ver_01": "0002"
+            },
+            "cupo": {
+                "ver_01": "25"
+            },
+            "salon": {
+                "ver_01": "B-201"
+            }
+        }
+    },
+    "0C": {
+        "info": {
+            "nombre": {
+                "ver_01": "Ciencias"
+            },
+            "descripcion": {
+                "ver_01": "Aqui se enseñan las ciencias"
+            },
+            "creditos": {
+                "ver_01": "3"
+            }
+        },
+        "asignacion": {
+            "id_profesor": {
+                "ver_01": "0003"
+            },
+            "cupo": {
+                "ver_01": "20"
+            },
+            "salon": {
+                "ver_01": "C-301"
+            }
+        }
+    },
+    "0D": {
+        "info": {
+            "nombre": {
+                "ver_01": "Literatura"
+            },
+            "descripcion": {
+                "ver_01": "Aqui se enseña la literatura"
+            },
+            "creditos": {
+                "ver_01": "2"
+            }
+        },
+        "asignacion": {
+            "id_profesor": {
+                "ver_01": "0004"
+            },
+            "cupo": {
+                "ver_01": "15"
+            },
+            "salon": {
+                "ver_01": "D-401"
+            }
+        }
+    },
+    "0E": {
+        "info": {
+            "nombre": {
+                "ver_01": "Inglés"
+            },
+            "descripcion": {
+                "ver_01": "Aqui se enseña el inglés"
+            },
+            "creditos": {
+                "ver_01": "3"
+            }
+        },
+        "asignacion": {
+            "id_profesor": {
+                "ver_01": "0005"
+            },
+            "cupo": {
+                "ver_01": "30"
+            },
+            "salon": {
+                "ver_01": "E-501"
+            }
+        }
+    }
+}

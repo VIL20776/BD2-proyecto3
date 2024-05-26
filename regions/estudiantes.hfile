@@ -31,8 +31,143 @@
             "cursos_actuales": {
                 "ver_01": 6
             }
-
         }
+    },
+    "0002": 
+    {
+        "personal": {
+            "nombre": {
+                "ver_01": "Ana"
+            },
+            "apellido": {
+                "ver_01": "González"
+            },
+            "fecha_de_nacimiento": {
+                "ver_01": "25-09-2002"
+            },
+            "telefono": {
+                "ver_01": "98765432"
+            },
+            "correo": {
+                "ver_01": "anagonzalez@example.com"
+            },
+            "direccion": {
+                "ver_01": "another-street-address"
+            }
+        },
+        "academico": {
+            "correo": {
+                "ver_01": "anagonzalez@example.edu"
+            },
+            "promedio": {
+                "ver_01": 92.3
+            },
+            "cursos_actuales": {
+                "ver_01": 5
+            }
+        }
+    },
+    "0003": 
+    {
+        "personal": {
+            "nombre": {
+                "ver_01": "Carlos"
+            },
+            "apellido": {
+                "ver_01": "López"
+            },
+            "fecha_de_nacimiento": {
+                "ver_01": "12-07-2001"
+            },
+            "telefono": {
+                "ver_01": "55555555"
+            },
+            "correo": {
+                "ver_01": "carloslopez@example.com"
+            },
+            "direccion": {
+                "ver_01": "some-other-street-address"
+            }
+        },
+        "academico": {
+            "correo": {
+                "ver_01": "carloslopez@example.edu"
+            },
+            "promedio": {
+                "ver_01": 87.9
+            },
+            "cursos_actuales": {
+                "ver_01": 4
+            }
+        }
+    },
+    "0004": 
+    {
+        "personal": {
+            "nombre": {
+                "ver_01": "Laura"
+            },
+            "apellido": {
+                "ver_01": "Pérez"
+            },
+            "fecha_de_nacimiento": {
+                "ver_01": "03-12-2004"
+            },
+            "telefono": {
+                "ver_01": "11111111"
+            },
+            "correo": {
+                "ver_01": "lauraperez@example.com"
+            },
+            "direccion": {
+                "ver_01": "yet-another-street-address"
+            }
+        },
+        "academico": {
+            "correo": {
+                "ver_01": "lauraperez@example.edu"
+            },
+            "promedio": {
+                "ver_01": 78.2
+            },
+            "cursos_actuales": {
+                "ver_01": 3
+            }
+        }
+    },
 
+    "0005": 
+    {
+        "personal": {
+            "nombre": {
+                "ver_01": "Pedro"
+            },
+            "apellido": {
+                "ver_01": "Ramírez"
+            },
+            "fecha_de_nacimiento": {
+                "ver_01": "10-02-2000"
+            },
+            "telefono": {
+                "ver_01": "99999999"
+            },
+            "correo": {
+                "ver_01": "pedroramirez@example.com"
+            },
+            "direccion": {
+                "ver_01": "some-address"
+            }
+        },
+        "academico": {
+            "correo": {
+                "ver_01": "pedroramirez@example.edu"
+            },
+            "promedio": {
+                "ver_01": 85.7
+            },
+            "cursos_actuales": {
+                "ver_01": 7
+            }
+        }
     }
 }
