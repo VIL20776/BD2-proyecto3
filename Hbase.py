@@ -160,6 +160,7 @@ class HBaseSimulator:
                 row_key, column_family, column, value = row
                 self.tables[table_name].put(row_key, column_family, column, value)
             print(f"Inserted {len(rows)} rows into {table_name} successfully.")
+            write_hfile(self.tables[table_name])
         else:
             print(f"Table {table_name} does not exist.")
 
@@ -169,6 +170,7 @@ class HBaseSimulator:
                 row_key, column_family, column, value = row
                 self.tables[table_name].put(row_key, column_family, column, value)
             print(f"Updated {len(rows)} rows in {table_name} successfully.")
+            write_hfile(self.tables[table_name])
         else:
             print(f"Table {table_name} does not exist.")
 
