@@ -2,6 +2,7 @@ import json
 import datetime
 from pathlib import Path
 from pprint import pprint
+from tabulate import tabulate
 
 class Table:
     def __init__(self, name, column_families, rows = {}):
@@ -46,12 +47,26 @@ class Table:
             print(f"Row {row_key} does not exist in table {self.name}.")
 
     def scan(self):
-        print(f"Scanning table {self.name}:\nROW\t\tCOLUMN+CELL")
+        print(f"Scanning table {self.name}:")
+        header = ["Row Key"]
+        for col_family_data in self.rows.values():
+            for col_family, column_data in col_family_data.items():
+                for column in column_data.keys():
+                    header.append(f"{col_family}:{column}")
+                    
+        rows = []
         for row_key, col_family_data in self.rows.items():
+            row = [row_key]
             for col_family, column_data in col_family_data.items():
                 for column, time_data in column_data.items():
+                    values = ""
                     for time, value in time_data.items():
-                        print(f"{row_key}\t\tcolumn={col_family}:{column}, timestamp={time}, value={value}")
+                        values += f"{time}: {value}\n"
+                    row.append(values)
+            rows.append(row)
+            
+        print(tabulate(rows, headers=header, tablefmt="pretty"))
+                        
 
     def delete(self, row_key, column_family, column, timestamp=None):
         if row_key in self.rows and column_family in self.rows[row_key] and column in self.rows[row_key][column_family]:
