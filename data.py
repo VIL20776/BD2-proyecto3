@@ -6,7 +6,7 @@ faker = Faker()
 
 # Generar 1000 registros ficticios
 registros = {}
-for i in range(5, 1000):
+for i in range(0, 1000):
     estudiante = {
         "personal": {
             "nombre": {"ver_01": faker.first_name()},

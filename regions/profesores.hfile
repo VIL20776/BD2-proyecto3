@@ -5,13 +5,13 @@
                 "ver_01": "Juan"
             },
             "apellido": {
-                "ver_01": "Perez"
+                
             },
             "fecha_de_nacimiento": {
                 "ver_01": "01/01/1990"
             },
             "telefono": {
-                "ver_01": "1234567890"
+                
             },
             "correo": {
                 "ver_01": "juanperez@example.com"
@@ -41,13 +41,13 @@
                 "ver_01": "Lopez"
             },
             "fecha_de_nacimiento": {
-                "ver_01": "02/02/1995"
+                
             },
             "telefono": {
                 "ver_01": "9876543210"
             },
             "correo": {
-                "ver_01": "marialopez@example.com"
+                
             },
             "direccion": {
                 "ver_01": "Avenida 456, Ciudad, Estado, Pais"
@@ -77,13 +77,13 @@
                 "ver_01": "03/03/1985"
             },
             "telefono": {
-                "ver_01": "5555555555"
+                
             },
             "correo": {
                 "ver_01": "carlosgonzalez@example.com"
             },
             "direccion": {
-                "ver_01": "Calle 789, Ciudad, Estado, Pais"
+                
             }
         },
         "profesional": {
@@ -91,7 +91,7 @@
                 "ver_01": "carlosgonzalez@example.edu"
             },
             "campo": {
-                "ver_01": "Arquitectura"
+                
             },
             "años_de_servicio": {
                 "ver_01": "8"
@@ -101,7 +101,7 @@
     "0004": {
         "personal": {
             "nombre": {
-                "ver_01": "Ana"
+                
             },
             "apellido": {
                 "ver_01": "Martinez"

@@ -2,13 +2,15 @@
     "0A": {
         "info": {
             "nombre": {
-                "ver_01": "Matematicas"
+                "ver_01": "Matematicas",
+                "ver_02": "Discreta"
             },
             "descripcion": {
                 "ver_01": "Aqui se enseñan las matematicas"
             },
             "creditos": {
-                "ver_01": "3"
+                "ver_01": "3",
+                "ver_02": "9"
             }
         },
         "asignacion": {
@@ -32,7 +34,8 @@
                 "ver_01": "Aqui se enseña la historia"
             },
             "creditos": {
-                "ver_01": "4"
+                "ver_01": "4",
+                "ver_02": "3"
             }
         },
         "asignacion": {
@@ -40,7 +43,8 @@
                 "ver_01": "0002"
             },
             "cupo": {
-                "ver_01": "25"
+                "ver_01": "25",
+                "ver_02": "20"
             },
             "salon": {
                 "ver_01": "B-201"
@@ -67,7 +71,8 @@
                 "ver_01": "20"
             },
             "salon": {
-                "ver_01": "C-301"
+                "ver_01": "C-301",
+                "ver_02": "C-500"
             }
         }
     },
