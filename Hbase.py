@@ -7,7 +7,7 @@ class HBaseSimulator:
     def __init__(self):
         self.tables: Table = {}
 
-        region_files = listdir("regions/")
+        region_files = listdir("regions/3")
         if region_files:
             for f in region_files:
                 table = read_hfile(f"regions/{f}")
